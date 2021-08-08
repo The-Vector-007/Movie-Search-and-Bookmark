@@ -4,6 +4,7 @@
     grid-auto-rows: 1fr;
     grid-column-gap: 30px;
     grid-row-gap: 30px;
+    margin: 15px;
 }
 
 .card {
@@ -15,7 +16,7 @@
 }
 
 .card-img-top {
-    width: 350px;
+    width: 100%;
     height: 300px;
     object-fit: fill;
 }
@@ -30,4 +31,14 @@
 
 .bookmark_icon:hover{
     color: red;
+}
+
+.card-title{
+    font-family:'Times New Roman', Times, serif;
+    font-size:x-large;
+}
+
+.card-text{
+    font-family:'Times New Roman', Times, serif; 
+    font-size: large;
 }

@@ -7,7 +7,7 @@
 }
 
 .card-img-top {
-    width: 350px;
+    width: 100%;
     height: 300px;
     object-fit: fill;
 }
@@ -26,4 +26,14 @@
 
 .active{
     color:red !important;
+}
+
+.card-title{
+    font-family:'Times New Roman', Times, serif;
+    font-size:x-large;
+}
+
+.card-text{
+    font-family:'Times New Roman', Times, serif; 
+    font-size: large;
 }

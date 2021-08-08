@@ -1,5 +1,5 @@
 <div class="card">
-    <nb-card >  
+    <nb-card>  
         <nb-card-body class="card-body">
             <img [src]="movie.Poster" class="card-img-top" [alt]="movie.Title">
 
@@ -12,10 +12,9 @@
                 [ngClass]="{active : movie.active}"
               ></nb-icon>
 
-            <h5 class="card-title">
+            <h2 class="card-title">
                 {{ movie.Title }}
-                <span class="badge badge-primary">{{ movie.Type }}</span>
-            </h5>
+            </h2>
             <p class="card-text">
                 {{ movie.Title }} is a {{ movie.Type }} that was released in {{ movie.Year }}
             </p>

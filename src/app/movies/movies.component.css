@@ -16,4 +16,5 @@ button {
     grid-auto-rows: 1fr;
     grid-column-gap: 30px;
     grid-row-gap: 30px;
+    margin-left: 15px;
 }
