@@ -1,3 +1,43 @@
-:host nb-tab {
-    padding: 1.25rem;
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+.header-wrapper{
+    display: flex;
+    justify-content:flex-end;
+    flex:1;
+}
+
+.title-container {
+    flex:1;
+}
+
+h1{
+    font-family:'Pangolin', cursive;
+}
+
+.btn {
+    background: #e50914;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 7px 17px;
+    text-align: center;
+    text-decoration: none !important;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    margin-top: 30px;
+}
+
+.btn:hover {
+    color: white;
+
+}
+p {
+    color: #999999 !important;
+}
+.footer a {
+    color: #e50914 !important;
+}
+a:hover{
+    text-decoration: none;
 }

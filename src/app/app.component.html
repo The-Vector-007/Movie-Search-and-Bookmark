@@ -1,16 +1,46 @@
 <div class = "nb-theme-default" >
-  <nb-card>
-    <nb-card-body>
+
+  <nb-layout>
+
+    <nb-layout-header class="header">
+      <div class="header-wrapper">
+        <div class="title-container">
+          <h1>Search your movies here!</h1>
+        </div>
+        <div class="btn-container">
+          <a class='btn' href="/">Search</a>
+          <a class='btn' href="bookmarks">Bookmarks</a>
+        </div>
+      </div>
+  </nb-layout-header>
+    
   
-      <nb-tabset fullWidth>
-        <nb-tab tabTitle="Search My Movie!">
-          <app-movies></app-movies>
-        </nb-tab>
-        <nb-tab tabTitle="Bookmarks"   >
-          <app-bookmarks  ></app-bookmarks>
-        </nb-tab>
-      </nb-tabset>
+    <nb-layout-column style="padding: 0!important;" class="body-container">
+      <router-outlet></router-outlet>
+    </nb-layout-column>
   
-    </nb-card-body>
-  </nb-card>
+    <nb-layout-footer class="footer" style="padding: 0 !important;">
+      <p>Ajay Singh | 2021 | <a href="https://github.com/The-Vector-007/Movie-Search-and-Bookmark">GitHub</a></p>
+      
+    </nb-layout-footer>
+  
+  </nb-layout>
+
+
+  <!-- <div class = "header" >
+    <div class="header-wrapper">
+
+      <div class = "app-title" >
+        <h1>Search your movies here!!</h1>
+      </div>
+
+      <div class="btn-container">
+        <a class='btn' href="/">Search</a>
+        <a class='btn' href="bookmarks">Bookmarks</a>
+      </div>
+
+    </div>
+  </div>
+
+  <router-outlet></router-outlet> -->
 </div>

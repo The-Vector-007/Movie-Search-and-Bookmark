@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Movie } from '../movie.model';
 
 @Component({
@@ -7,8 +7,7 @@ import { Movie } from '../movie.model';
   styleUrls: ['./bookmarks.component.css']
 })
 export class BookmarksComponent{
-
-
+    
     bookmarks! : Movie[]
 
     constructor(){}

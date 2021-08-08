@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { MovieService } from './movie.service';
 import { HttpClientModule } from '@angular/common/http';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { NbEvaIconsModule } from '@nebular/eva-icons';
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    AppRoutingModule,
     NbLayoutModule,
     NbThemeModule.forRoot({ name: 'default' }),
     NbCardModule,
