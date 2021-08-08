@@ -1,1 +1,28 @@
-<p>bookmarks works!</p>
+<div *ngIf = "bookmarks.length != 0" >
+    <div class = "card-grid" > 
+        <div class="card" *ngFor="let movie of bookmarks"  >
+            <nb-card >  
+                <nb-card-body class="card-body">
+                    <img [src]="movie.Poster" class="card-img-top" [alt]="movie.Title">
+        
+                    <nb-icon
+                        (click) = "removeBookmark(movie.Title)"
+                        class="bookmark_icon"
+                        nbPrefix
+                        icon="bookmark"
+                        pack="eva"
+                        style="color : red;"
+                      ></nb-icon>
+        
+                    <h5 class="card-title">
+                        {{ movie.Title }}
+                        <span class="badge badge-primary">{{ movie.Type }}</span>
+                    </h5>
+                    <p class="card-text">
+                        {{ movie.Title }} is a {{ movie.Type }} that was released in {{ movie.Year }}
+                    </p>
+                </nb-card-body>
+            </nb-card>
+        </div>
+    </div>
+</div>

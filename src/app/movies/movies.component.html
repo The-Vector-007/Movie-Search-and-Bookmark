@@ -1,1 +1,17 @@
-<p>movies works!</p>
+<div class="container">
+
+    <nb-card>
+        <nb-card-body>
+            <input id="searchQuery" type="text" [(ngModel)]="searchQuery" nbInput fullWidth status="primary"
+                placeholder="Search Here..." (keyup.enter)="displayMovies()" >
+            <button nbButton status="primary" (click)="displayMovies()">Search</button>
+        </nb-card-body>
+    </nb-card>
+
+    <div class = "card-grid" > 
+        <app-movie-card *ngFor="let movie of movies$ | async" [movie]="movie" >
+        </app-movie-card>
+    </div>
+
+    
+</div>

@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import { Observable } from 'rxjs';
+
+import { Movie } from '../movie.model';
+import { MovieService } from '../movie.service';
 
 @Component({
   selector: 'app-movies',
@@ -7,4 +11,13 @@ import { Component } from '@angular/core';
 })
 export class MoviesComponent {
 
+  searchQuery : string = "";
+
+  movies$!: Observable<Array<Movie>>;
+
+  constructor(private readonly movieService: MovieService) {}
+
+  displayMovies() {
+    this.movies$ = this.movieService.searchMovie(this.searchQuery);
+  }
 }

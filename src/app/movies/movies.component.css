@@ -1,0 +1,19 @@
+input {
+    margin-bottom: 10px;
+}
+
+.parent-container {
+    position: relative;
+}
+
+button {
+    float: right;
+}
+
+.card-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}

@@ -1,11 +1,3 @@
-.card-grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 1fr;
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
-}
-
 .card {
     margin-top: 50px;
     max-width: 500px;
@@ -22,7 +14,7 @@
 
 .bookmark_icon {
     font-size: 3rem;
-    color:red;
+    color: rgb(28, 56, 197);
     position: absolute;
     right: 0.4rem;
     top: 0.4rem;
@@ -30,4 +22,8 @@
 
 .bookmark_icon:hover{
     color: red;
+}
+
+.active{
+    color:red !important;
 }
