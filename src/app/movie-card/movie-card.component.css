@@ -20,20 +20,20 @@
     top: 0.4rem;
 }
 
-.bookmark_icon:hover{
+.bookmark_icon:hover {
     color: red;
 }
 
-.active{
-    color:red !important;
+.active {
+    color: red !important;
 }
 
-.card-title{
-    font-family:'Times New Roman', Times, serif;
-    font-size:x-large;
+.card-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
 }
 
-.card-text{
-    font-family:'Times New Roman', Times, serif; 
+.card-text {
+    font-family: 'Times New Roman', Times, serif;
     font-size: large;
 }

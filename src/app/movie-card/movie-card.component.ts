@@ -9,21 +9,21 @@ import { Movie } from '../Model/movie.model'
 })
 export class MovieCardComponent {
 
-  bookmarks! : Movie[]
+  bookmarks! : Movie[] //storing Movie objects for localstorage
 
   bookmarkMovie( currentMovie : Movie ){
-    currentMovie.active = !currentMovie.active
+    currentMovie.active = !currentMovie.active // toggle the bookmark icon color
 
-    const getBookmarks = localStorage.getItem('bookmarks');
+    const getBookmarks = localStorage.getItem('bookmarks'); // get bookmarks from localstorage
 
-    if( getBookmarks == null ){
+    if( getBookmarks == null ){ // if there are no bookmarks initialize bookmarks with an empty array
       this.bookmarks = [];
     }
     else{
-      this.bookmarks = JSON.parse(getBookmarks);
+      this.bookmarks = JSON.parse(getBookmarks); // else parse & assign the data
     }
 
-    let movieFound : boolean = false;
+    let movieFound : boolean = false; // checking whether the selected movie is already present
 
     for( let i = 0; i < this.bookmarks.length; i++ ){
       if( this.bookmarks[i].imdbID == currentMovie.imdbID ){
@@ -31,16 +31,16 @@ export class MovieCardComponent {
       }
     }
 
-    if( movieFound ){
+    if( movieFound ){ // if present do nothing
       console.log('Movie is already present!')
     }
-    else{
-      this.bookmarks.push( currentMovie );
+    else{ // if not present add it to bookmarks and set it to localstorage
+      this.bookmarks.push( currentMovie ); 
       localStorage.setItem('bookmarks', JSON.stringify( this.bookmarks ))
     }
 
   }
 
-  @Input() movie! : Movie;
+  @Input() movie! : Movie; //this component will receieve the Movie object from parent
 
 }

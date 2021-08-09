@@ -10,7 +10,7 @@ button {
     float: right;
 }
 
-.card-grid{
+.card-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 1fr;
