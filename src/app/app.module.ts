@@ -9,7 +9,7 @@ import { BookmarksComponent } from './bookmarks/bookmarks.component';
 import { RouterModule } from '@angular/router';
 import { MovieCardComponent } from './movie-card/movie-card.component';
 import { FormsModule } from '@angular/forms';
-import { MovieService } from './movie.service';
+import { MovieService } from './services/movie.service';
 import { HttpClientModule } from '@angular/common/http';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { AppRoutingModule } from './app-routing.module';

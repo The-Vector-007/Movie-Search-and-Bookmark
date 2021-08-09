@@ -1,17 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
-
-.header-wrapper{
+.header-wrapper {
     display: flex;
-    justify-content:flex-end;
-    flex:1;
+    justify-content: flex-end;
+    flex: 1;
 }
 
 .title-container {
-    flex:1;
+    flex: 1;
 }
 
-h1{
-    font-family:'Pangolin', cursive;
+h1 {
+    font-family: 'Pangolin', cursive;
 }
 
 .btn {
@@ -30,14 +29,16 @@ h1{
 
 .btn:hover {
     color: white;
-
 }
+
 p {
     color: #999999 !important;
 }
+
 .footer a {
     color: #e50914 !important;
 }
-a:hover{
+
+a:hover {
     text-decoration: none;
 }

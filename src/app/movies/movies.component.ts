@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
 
-import { Movie } from '../movie.model';
-import { MovieService } from '../movie.service';
+import { Movie } from '../Model/movie.model';
+import { MovieService } from '../services/movie.service';
 
 @Component({
   selector: 'app-movies',
